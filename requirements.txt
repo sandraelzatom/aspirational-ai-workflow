@@ -1,0 +1,6 @@
+openai==1.40.0
+pydantic==2.8.2
+deepeval==0.21.42
+langchain-community==0.2.10
+llama-index==0.10.58
+python-dotenv==1.0.1
