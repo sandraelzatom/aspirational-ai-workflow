@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandra | AI Implementation Specialist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --black: #000000;
+            --white: #ffffff;
+            --gray: #f5f5f5;
+            --border: #e5e5e5;
+            --text-secondary: #666666;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--white);
+            color: var(--black);
+            line-height: 1.6;
+            padding: 80px 24px;
+        }
+
+        .container { max-width: 800px; margin: 0 auto; }
+
+        /* Typography Hierarchy */
+        .label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            margin-bottom: 40px;
+        }
+
+        .bio {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 80px;
+            max-width: 650px;
+        }
+
+        /* Profile Image */
+        .profile-section { margin-bottom: 100px; }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--gray);
+            object-fit: cover;
+            filter: grayscale(100%); /* Matches high-contrast aesthetic */
+            border: 1px solid var(--border);
+        }
+
+        /* Project Cards */
+        .projects-grid { margin-top: 40px; }
+        .project-card {
+            border-top: 1px solid var(--border);
+            padding: 48px 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .project-card h3 { font-size: 1.75rem; font-weight: 700; }
+        
+        .outcome-tag {
+            display: inline-block;
+            background: var(--black);
+            color: var(--white);
+            padding: 4px 12px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            margin-top: 16px;
+        }
+
+        /* Skills List */
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 16px;
+            list-style: none;
+            margin-top: 24px;
+        }
+
+        .skills-list li {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--gray);
+        }
+
+        footer {
+            margin-top: 120px;
+            padding-top: 40px;
+            border-top: 1px solid var(--black);
+        }
+
+        a { color: var(--black); text-decoration: none; font-weight: 700; border-bottom: 2px solid var(--black); }
+        a:hover { background: var(--black); color: var(--white); }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="profile-section">
+                <img src="portrait.jpg" alt="Sandra" class="profile-img">
+            </div>
+            <span class="label">AI Implementation Specialist</span>
+            <h1>Architecting Intentionality within Autonomous Intelligence.</h1>
+            <p class="bio">
+                I translate complex Large Language Model capabilities into structured, 
+                high-utility operational frameworks. Focused on the synthesis of 
+                human-centric design and algorithmic rigor.
+            </p>
+        </header>
+
+        <main>
+            <section id="projects">
+                <span class="label">Selected Research</span>
+                <div class="projects-grid">
+                    
+                    <article class="project-card">
+                        <h3>JurisPrism: Hierarchical GraphRAG</h3>
+                        <p>Resolving context fragmentation in legal discovery through entity-relationship mapping and recursive retrieval.</p>
+                        <div>
+                            <span class="outcome-tag">Outcome: 42% Reduction in Hallucination</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Guardian Layer: Bias Mitigation</h3>
+                        <p>Systematic adversarial auditing of automated recruitment workflows to ensure 2026 safety compliance.</p>
+                        <div>
+                            <span class="outcome-tag">Status: Research Phase</span>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <section id="skills" style="margin-top: 80px;">
+                <span class="label">Technical Competencies</span>
+                <ul class="skills-list">
+                    <li>Latent Space Navigation</li>
+                    <li>Recursive RAG Architecture</li>
+                    <li>Agentic Orchestration</li>
+                    <li>Adversarial Red-Teaming</li>
+                    <li>Pydantic Enforcement</li>
+                    <li>Human-AI UX Design</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <span class="label">Contact & Deployment</span>
+            <p>
+                <a href="https://github.com/sandraelzatom">GitHub</a> &nbsp; 
+                <a href="#">LinkedIn</a> &nbsp; 
+                <a href="mailto:your-email@example.com">Email</a>
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
